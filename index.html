@@ -93,15 +93,21 @@
       width: 100%;
       display: inline-block;
     }
+    .column-feature-product {
+      max-width: 375px !important;
+    }
+    .column-feature-save {
+      max-width: 225px !important;
+    }
     .column-one-half {
         max-width: 300px !important;
     }
-    .column-feature-text {
+    /* .column-feature-text {
       max-width: 350px;
     }
     .column-feature-price {
       max-width: 250px;
-    }
+    } */
     .flyerProduct {
       width: 280px !important;
     }
@@ -191,7 +197,9 @@
       .column {
         width: 100%;
       }
-      .column-one-half {
+      .column-one-half,
+      .column-feature-product,
+      .column-feature-save {
       		max-width: 49% !important;
       }
       .column-feature-text {
@@ -211,6 +219,9 @@
       }
       .featureDesc {
       	font-size: 16px !important;
+      }
+      .featureSave {
+        font-size: 18px !important;
       }
       img.footer-logo {
         width: inherit !important;
@@ -261,8 +272,11 @@
       p.productDescription {
         color: #fafafa !important;
       }
-      .productSave {
-        color: #fafafa !important;
+      .featureSave {
+        background-color: #fafafa !important;
+        color: #e61d35 !important;
+        border: 2px solid #e61d35 !important;
+        padding-right: 12px !important;
       }
       .browser {
         color: #fafafa !important;
@@ -519,7 +533,7 @@
                         <td width="280" valign="top" style="padding: 0;"
                   <![endif]-->
 
-                  <table class="column column-one-half" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
+                  <table class="column column-feature-product" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
                     <tr>
                       <td class="padding" style="padding: 24px 0 0 0;">
 
@@ -541,15 +555,16 @@
                       </td><td width="280"  valign="top" style="padding: 0;">
                     <![endif]-->
 
-                  <table class="column column-one-half" width="100%" align="right" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
+                  <table class="column column-feature-save" width="100%" align="right" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
                     <tr>
-                      <td class="padding" style="padding: 24px 0 0 0;">
+                      <td class="padding" style="padding: 18px 0 0 0;">
 
                         <table class="column" width="100%" align="right" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                           <tr>
                             <td class="flyerProduct" style="text-align: right; padding-right: 16px; vertical-align: top;  font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <h2 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 700; color: #005cab; margin: 0; line-height: 48px;">$00.00</h2>
-                              <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
+                              <h3 class="featureSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; background-color: #e61d35; padding: 8px 16px 4px 0; border-radius: 10px; margin: 0 !important;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
+                              <h2 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 700; letter-spacing: 0.5px; color: #005cab;  line-height: 48px; padding-top: 8px;">$00.00</h2>
+
                             </td>
                           </tr>
                         </table>
@@ -639,7 +654,7 @@
                               <tr>
                                 <td class="flyerProductPrice" style="text-align: left; padding: 4px 16px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
                                   <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
+                                  <h3 class="productSaveText" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSavePrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
                                 </td>
                               </tr>
                             </table>
@@ -923,15 +938,16 @@
                       </td><td width="280"  valign="top" style="padding: 0;">
                     <![endif]-->
 
-                  <table class="column column-one-half" width="100%" align="right" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
+                  <table class="column column-feature-save" width="100%" align="right" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
                     <tr>
-                      <td class="padding" style="padding: 24px 0 0 0;">
+                      <td class="padding" style="padding: 18px 0 0 0;">
 
                         <table class="column" width="100%" align="right" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                           <tr>
                             <td class="flyerProduct" style="text-align: right; padding-right: 16px; vertical-align: top;  font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <h2 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 700; color: #005cab; margin: 0; line-height: 48px;">$00.00</h2>
-                              <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
+                              <h3 class="featureSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; background-color: #e61d35; padding: 8px 16px 4px 0; border-radius: 10px; margin: 0 !important;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
+                              <h2 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 700; letter-spacing: 0.5px; color: #005cab;  line-height: 48px; padding-top: 8px;">$00.00</h2>
+
                             </td>
                           </tr>
                         </table>
@@ -1267,6 +1283,7 @@
         <!-- HORIZONTAL SEPARATOR END -->
 
         <!-- PRICE DROP SECTION START -->
+
           <!-- PRICE DROP HERO START -->
           <tr>
             <td style="padding: 0;">
@@ -1294,6 +1311,63 @@
             </td>
           </tr>
           <!-- PRICE DROP HERO END -->
+
+          <!-- PRICES IN EFFECT START -->
+          <tr>
+            <td style="padding: 0;">
+
+                <!--[if mso]>
+                  <table width="600" align="center" style="border-spacing: 0;" role="presentation">
+                    <tr>
+                      <td width="600" valign="top" style="padding: 0;"
+                <![endif]-->
+
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; padding: 0; max-width: 600px;" role="presentation">
+                  <tr>
+                    <td class="emailDate" style="text-align: center; font-size: 18px; font-family: Helvetica, Arial, sans-serif; text-transform: uppercase;  color: #fafafa; background-color: #005cab; padding: 16px 0 12px;">
+                      <h1 style="font-size: 18px; line-height: 22px; font-weight: 500; color: #fafafa; letter-spacing: 0.3px;">Prices in effect: start date - end date 2025</h1>
+                    </td>
+                  </tr>
+                </table>
+
+                <!--[if mso]>
+                      </td>
+                    </tr>
+                  </table>
+                <![endif]-->
+
+            </td>
+          </tr>
+          <!-- PRICES IN EFFECT END -->
+
+          <!-- PRICE DROP INTRO SECTION START -->
+          <tr>
+            <td style="padding: 0;">
+
+              <!--[if mso]>
+                <table width="600" align="center" style="border-spacing: 0;" role="presentation">
+                  <tr>
+                    <td width="600" valign="top" style="padding: 0;"
+              <![endif]-->
+
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="margin: 0; border-spacing: 0;" role="presentation">
+                <tr>
+                  <td class="greeting" style="text-align: left; font-size: 16px; line-height: 26px; font-family: Helvetica, Arial, sans-serif; font-weight: 500; color: #2d2d2d; padding: 32px 48px;">
+                    <p style="font-size: 18px; line-height: 22px; color: #2d2d2d; margin: 0;"><span style="font-weight: 700;">Price Drop</span> items have been chosen to help you fill your basket for less. And all Price Drop items are locked in for a 4 or 5 week period to help you save even more!</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!--[if mso]>
+                    </td>
+                  </tr>
+                </table>
+              <![endif]-->
+
+            </td>
+          </tr>
+          <!-- PRICE DROP INTRO SECTION END -->
 
           <!-- PRICE DROP FEATURE PRODUCT START -->
           <tr>
@@ -1458,73 +1532,43 @@
           <!-- PRICE DROP TWO COLUMN SECTION END -->
         <!-- PRICE DROP SECTION END -->
 
-        <!-- START CTA BUTTON SECTION -->
+        <!-- LINK TO northernstores.ca START -->
         <tr>
-          <td  align="center" style="padding: 0;"> <!-- align & padding -->
-            
+          <td style="margin: 0 20px 20px 20px !important;">
+
             <!--[if mso]>
-                <table width="600" align="center" style="border-spacing: 0;" role="presentation">
-                  <tr>
-                    <td width="600" valign="top" style="padding: 0;"
-              <![endif]-->
-            
-            <table border="0" align="center" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation"> <!-- standard & alignment -->
+              <table width="600" align="center" style="border-spacing: 0;" role="presentation">
+                <tr>
+                  <td width="600" valign="top" style="padding: 0;"
+            <![endif]-->
 
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin: 30px 0 30px 0;" role="presentation">
               <tr>
-                <td style="padding: 48px 20px 20px 20px;">
-
-                <h2 class="ctaHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 36px; font-weight: 700; line-height: 40px; color: #005cab; margin: 0; text-align: center;">Looking for More?</h2>
-
+                <td style="text-align: center; padding: 0;">
+                  <a href="https://www.northmart.ca/" target="_blank">
+                    <h2 class="northmartLink" style="font-family: Helvetica, Arial, sans-serif; font-size: 42px; font-weight: 700; line-height: 1; text-decoration: none; color: #005cab; display: inline-block;">northernstores.ca</h2>
+                  </a>
                 </td>
               </tr>
 
-              <tr>
-                <td align="center" style="padding: 0;">
-
-                  <!--[if mso]>
-                    <table width="600" align="center" style="border-spacing: 0;" role="presentation">
-                      <tr>
-                        <td width="600" valign="top" style="padding: 0;"
-                  <![endif]-->
-
-                  <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
-
-                    <tr>
-                      <td align="center" bgcolor="#005cab" style="border-radius: 8px; color: #fafafa; background-color: #005cab;">
-                        <a class="btn ctaText" href="https://www.northmart.ca/flyers" target="_blank" style="font-size: 24px; font-weight: 500; letter-spacing: 1px; text-decoration: none !important; text-transform: uppercase; color: #fafafa; background-color: #005cab; border: 1px solid #005cab; border-radius: 8px; padding: 16px 60px 12px 60px; display: inline-block;">Check your local Flyer</a>
-                      </td>
-                    </tr>
-
-                  </table>
-
-                  <!-- [if mso]>
-                        </td>
-                      </tr>
-                    </table>
-                  -->
-
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding: 24px 20px 32px 20px;">
+                            <tr>
+                <td style="padding: 24px 20px 0 20px;">
 
                   <p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 500; line-height: 16px; color: #005cab; margin: 0; text-align: center; padding: 0;">Visit your local store for these great items and more.</p>
 
                 </td>
               </tr>
-
             </table>
 
-            <!-- [if mso]>
-                  </td>
-                </tr>
+            <!--[if mso]>
+              </td>
+              </tr>
               </table>
-            -->
+            <![endif]-->
 
           </td>
         </tr>
-        <!-- END CTA BUTTON SECTION -->
+        <!-- LINK TO northernstores.ca END -->
         
         <!-- HORIZONTAL SEPARATOR START -->
         <tr>
@@ -1908,7 +1952,9 @@
               <tr>
                 <td style="padding: 0 20px 0 20px;">
 
-                    <p style="font-size: 12px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 20px; text-align: center; padding: 0 20px 10px 20px;">© 2025 The North West Company. All rights reserved</p>
+                    <p style="font-size: 12px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 10px; text-align: center; padding: 0 20px 10px 20px;">© 2025 The North West Company. All rights reserved</p>
+
+                    <p style="font-size: 12px !important; line-height: 1.5; font-weight: 500; font-family: Helvetica, Arial, sans-serif; color: #fafafa; margin-bottom: 20px; text-align: center;">Please do not reply to this email as this email address is not being monitored for incoming messages.</p>
 
                 </td>
               </tr>
