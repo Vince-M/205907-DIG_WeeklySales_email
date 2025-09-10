@@ -188,6 +188,7 @@
       }
       .ctaText {
         font-size: 18px !important;
+        padding: 16px 20px 12px 20px !important;
       }
       .column-wrapper.fluid-hybrid .column,
       .column-wrapper.fluid-hybrid .column img {
@@ -210,9 +211,11 @@
         font-size: 22px !important;
         line-height: 28px !important;
       }
-      .flyerProduct,
+      .flyerProduct {
+      	padding: 8px 16px 4px 0 !important; 
+      }
       .flyerProductPrice {
-        padding: 0 16px 0 16px !important;
+        padding: 4px 8px 4px 8px !important;
       }
       .productPrice {
         font-size: 32px !important;
@@ -222,6 +225,12 @@
       }
       .featureSave {
         font-size: 18px !important;
+      }
+      .productSave-sm {
+        font-size: 16px !important;
+        margin: 0 !important;
+        padding: 8px 8px 4px 0 !important;
+        /* width: 85% !important; */
       }
       img.footer-logo {
         width: inherit !important;
@@ -263,7 +272,7 @@
       h3 {
         color: #fafafa !important;
       }
-        h3.productPrice {
+      h3.productPrice {
         color: #fafafa; 
       }
       p {
@@ -272,12 +281,15 @@
       p.productDescription {
         color: #fafafa !important;
       }
-      .featureSave {
+      /* .featureSave {
         background-color: #fafafa !important;
         color: #e61d35 !important;
         border: 2px solid #e61d35 !important;
         padding-right: 12px !important;
-      }
+      } */
+       .productSave-sm {
+        font-size: 16px !important;
+       }
       .browser {
         color: #fafafa !important;
       }
@@ -513,11 +525,27 @@
               <tr>
                 <td style="padding: 0;">
 
-                  <tr>
-                    <td class="emailHero" style="text-align: center; padding: 0; font-size: 0;">
-                      <img src="img/feature_placeholder_1200x500.jpg" alt="feature alt text" class="emailBanner" title="feature title tag" width="600" border="0" style="width: 100%; max-width: 600px;">
-                    </td>
-                  </tr>
+                  <!-- [if mso]>
+                    <table width="600" align="center" style="border-spacing: 0; border-collapse: collapse; color: #2d2d2d;" role="presentation">
+                      <tr>
+                        <td style="padding: 0;">
+                  <![endif]-->
+              
+                  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+
+                    <tr>
+                      <td class="emailHero" style="text-align: center; padding: 0; font-size: 0;">
+                        <img src="img/feature_placeholder_1200x500.jpg" alt="feature alt text" class="emailBanner" title="feature title tag" width="600" border="0" style="width: 100%; max-width: 600px;">
+                      </td>
+                    </tr>
+
+                  </table>
+
+                  <!--[if mso]>
+                        </td>
+                      </tr>
+                    </table>
+                  <![endif]-->
 
                 </td>
               </tr>
@@ -533,7 +561,7 @@
                         <td width="280" valign="top" style="padding: 0;"
                   <![endif]-->
 
-                  <table class="column column-feature-product" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
+                  <table class="column column-feature-product" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0; width: 100%;" role="presentation">
                     <tr>
                       <td class="padding" style="padding: 24px 0 0 0;">
 
@@ -559,12 +587,15 @@
                     <tr>
                       <td class="padding" style="padding: 18px 0 0 0;">
 
-                        <table class="column" width="100%" align="right" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+                        <table class="column" width="100%" align="right" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; padding-right: 16px;" role="presentation">
                           <tr>
-                            <td class="flyerProduct" style="text-align: right; padding-right: 16px; vertical-align: top;  font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <h3 class="featureSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; background-color: #e61d35; padding: 8px 16px 4px 0; border-radius: 10px; margin: 0 !important;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
+                            <td class="flyerProduct" style="font-family: Helvetica, Arial, sans-serif; text-align: right; background-color: #e61d35; padding: 8px 16px 4px 0; border-radius: 10px; vertical-align: top; width: 100%;">
+                              <h3 class="featureSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; margin: 0 !important;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="flyerProduct" style="text-align: right; vertical-align: top;  font-family: Helvetica, Arial, sans-serif; width: 100%;">
                               <h2 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 700; letter-spacing: 0.5px; color: #005cab;  line-height: 48px; padding-top: 8px;">$00.00</h2>
-
                             </td>
                           </tr>
                         </table>
@@ -620,7 +651,7 @@
           <!-- FOUR PRODUCTS START -->
             <!-- top row two items -->
             <tr>
-              <td class="top-row-items" style="padding: 0 0 20px 0;">
+              <td class="top-row-items" style="padding: 0; margin-bottom: 20px; display: block;">
                 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                 
                   <tr>
@@ -643,21 +674,33 @@
                                 </td>
                               </tr>
                             </table>
-                            
-                            <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
-                              <tr>
-                                <td class="flyerProduct" style="text-align: left; padding: 0 24px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important; padding-bottom: 4px;">Product</h3>
-                                  <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="flyerProductPrice" style="text-align: left; padding: 4px 16px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
-                                  <h3 class="productSaveText" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSavePrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
-                                </td>
-                              </tr>
-                            </table>
+
+                            <tr>
+                              <td style="padding: 0 24px 0 16px;">
+
+                                <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                    <td class="flyerProduct" style="text-align: left; padding: 0 0 8px 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
+                                      <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important;">Product</h3>
+                                      <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding: 8px 16px 4px 16px; vertical-align: top; width: 100%; background-color: #e61d35; border-radius: 8px;">
+                                      <h3 class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; width: 85%;"><span class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; font-size: 24px; font-weight: 700; color: #fafafa; padding-right: 16px;">save</span> $00.00</h3>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding-top: 8px; vertical-align: top; width: 100%;">
+                                      <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                              </td>
+                            </tr>
 
                           </td>
                         </tr>
@@ -669,7 +712,8 @@
 
                       <table class="column column-one-half" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
                         <tr>
-                          <td style="padding: 0;">
+                          <td class="padding" style="padding: 0;">
+
                             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                               <tr>
                                 <td style="text-align: center; padding: 0; font-size: 0;">
@@ -678,20 +722,32 @@
                               </tr>
                             </table>
 
-                            <table class="column" width="100%" align="left" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
-                              <tr>
-                                <td class="flyerProduct" style="text-align: left; padding: 0 24px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important; padding-bottom: 8px;">Product Name</h3>
-                                  <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="flyerProductPrice" style="text-align: left; padding: 8px 0 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
-                                </td>
-                              </tr>
-                            </table>
+                            <tr>
+                              <td style="padding: 0 24px 0 16px;">
+
+                                <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                    <td class="flyerProduct" style="text-align: left; padding: 0 0 8px 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
+                                      <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important;">Product</h3>
+                                      <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding: 8px 16px 4px 16px; vertical-align: top; width: 100%; background-color: #e61d35; border-radius: 8px;">
+                                      <h3 class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; width: 85%;"><span class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; font-size: 24px; font-weight: 700; color: #fafafa; padding-right: 16px;">save</span> $00.00</h3>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding-top: 8px; vertical-align: top; width: 100%;">
+                                      <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                              </td>
+                            </tr>
 
                           </td>
                         </tr>
@@ -712,7 +768,7 @@
 
             <!-- bottom row two items -->
             <tr>
-              <td class="bottom-row-items" style="padding-bottom: 0; margin: 0;">
+              <td class="bottom-row-items" style="padding: 0;">
                 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                 
                   <tr>
@@ -724,9 +780,9 @@
                             <td width="280" valign="top" style="padding: 0;"
                       <![endif]-->
 
-                      <table class="column column-one-half" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
+                      <table class="column column-one-half" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
                         <tr>
-                          <td class="padding" style="padding: 24px 0 0;">
+                          <td class="padding" style="padding: 0;">
 
                             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                               <tr>
@@ -735,21 +791,33 @@
                                 </td>
                               </tr>
                             </table>
-                            
-                            <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
-                              <tr>
-                                <td class="flyerProduct" style="text-align: left; padding: 0 24px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important; padding-bottom: 8px;">Product Name</h3>
-                                  <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="flyerProductPrice" style="text-align: left; padding: 4px 16px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
-                                </td>
-                              </tr>
-                            </table>
+
+                            <tr>
+                              <td style="padding: 0 24px 0 16px;">
+
+                                <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                    <td class="flyerProduct" style="text-align: left; padding: 0 0 8px 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
+                                      <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important;">Product</h3>
+                                      <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding: 8px 16px 4px 16px; vertical-align: top; width: 100%; background-color: #e61d35; border-radius: 8px;">
+                                      <h3 class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; width: 85%;"><span class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; font-size: 24px; font-weight: 700; color: #fafafa; padding-right: 16px;">save</span> $00.00</h3>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding-top: 8px; vertical-align: top; width: 100%;">
+                                      <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                              </td>
+                            </tr>
 
                           </td>
                         </tr>
@@ -759,31 +827,44 @@
                       </td><td width="280" valign="top" style="padding: 0;">
                       <![endif]-->
 
-                      <table class="column column-one-half" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin: 0;" role="presentation">
+                      <table class="column column-one-half" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
                         <tr>
-                          <td class="padding" style="padding: 24px 0 0;">
+                          <td class="padding" style="padding: 0;">
+
                             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                               <tr>
                                 <td style="text-align: center; padding: 0; font-size: 0;">
-                                  <img src="img/image-placeholder_no-bkgd_560x300.png" alt="Product alt text" style="margin-bottom: 16px; width: 100%; max-width: 300px;" title="Product Title text" width="280">
+                                  <img src="img/image-placeholder_no-bkgd_560x300.png" alt="Product alt text" style="margin-bottom: 16px; width: 100%; max-width: 600px;" title="Product Title text" width="280">
                                 </td>
                               </tr>
                             </table>
 
-                            <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin: 0;" role="presentation">
-                              <tr>
-                                <td class="flyerProduct" style="text-align: left; padding: 0 24px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important; padding-bottom: 8px;">Product Name</h3>
-                                  <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="flyerProductPrice" style="text-align: left; padding: 4px 16px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
-                                </td>
-                              </tr>
-                            </table>
+                            <tr>
+                              <td style="padding: 0 24px 0 16px;">
+
+                                <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                    <td class="flyerProduct" style="text-align: left; padding: 0 0 8px 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
+                                      <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important;">Product</h3>
+                                      <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding: 8px 16px 4px 16px; vertical-align: top; width: 100%; background-color: #e61d35; border-radius: 8px;">
+                                      <h3 class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; width: 85%;"><span class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; font-size: 24px; font-weight: 700; color: #fafafa; padding-right: 16px;">save</span> $00.00</h3>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding-top: 8px; vertical-align: top; width: 100%;">
+                                      <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                              </td>
+                            </tr>
 
                           </td>
                         </tr>
@@ -942,12 +1023,15 @@
                     <tr>
                       <td class="padding" style="padding: 18px 0 0 0;">
 
-                        <table class="column" width="100%" align="right" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+                        <table class="column" width="100%" align="right" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; padding-right: 16px;" role="presentation">
                           <tr>
-                            <td class="flyerProduct" style="text-align: right; padding-right: 16px; vertical-align: top;  font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                              <h3 class="featureSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; background-color: #e61d35; padding: 8px 16px 4px 0; border-radius: 10px; margin: 0 !important;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
+                            <td class="flyerProduct" style="font-family: Helvetica, Arial, sans-serif; text-align: right; background-color: #e61d35; padding: 8px 16px 4px 0; border-radius: 10px; vertical-align: top; width: 100%;">
+                              <h3 class="featureSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; margin: 0 !important;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="flyerProduct" style="text-align: right; vertical-align: top;  font-family: Helvetica, Arial, sans-serif; width: 100%;">
                               <h2 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 700; letter-spacing: 0.5px; color: #005cab;  line-height: 48px; padding-top: 8px;">$00.00</h2>
-
                             </td>
                           </tr>
                         </table>
@@ -1025,21 +1109,33 @@
                                 </td>
                               </tr>
                             </table>
-                            
-                            <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
-                              <tr>
-                                <td class="flyerProduct" style="text-align: left; padding: 0 24px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important; padding-bottom: 4px;">Product</h3>
-                                  <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="flyerProductPrice" style="text-align: left; padding: 4px 16px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
-                                </td>
-                              </tr>
-                            </table>
+
+                            <tr>
+                              <td style="padding: 0 24px 0 16px;">
+
+                                <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                    <td class="flyerProduct" style="text-align: left; padding: 0 0 8px 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
+                                      <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important;">Product</h3>
+                                      <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding: 8px 16px 4px 16px; vertical-align: top; width: 100%; background-color: #e61d35; border-radius: 8px;">
+                                      <h3 class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; width: 85%;"><span class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; font-size: 24px; font-weight: 700; color: #fafafa; padding-right: 16px;">save</span> $00.00</h3>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding-top: 8px; vertical-align: top; width: 100%;">
+                                      <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                              </td>
+                            </tr>
 
                           </td>
                         </tr>
@@ -1051,7 +1147,8 @@
 
                       <table class="column column-one-half" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
                         <tr>
-                          <td style="padding: 0;">
+                          <td class="padding" style="padding: 0;">
+
                             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                               <tr>
                                 <td style="text-align: center; padding: 0; font-size: 0;">
@@ -1060,20 +1157,32 @@
                               </tr>
                             </table>
 
-                            <table class="column" width="100%" align="left" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
-                              <tr>
-                                <td class="flyerProduct" style="text-align: left; padding: 0 24px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important; padding-bottom: 8px;">Product Name</h3>
-                                  <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="flyerProductPrice" style="text-align: left; padding: 8px 0 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
-                                </td>
-                              </tr>
-                            </table>
+                            <tr>
+                              <td style="padding: 0 24px 0 16px;">
+
+                                <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                    <td class="flyerProduct" style="text-align: left; padding: 0 0 8px 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
+                                      <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important;">Product</h3>
+                                      <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding: 8px 16px 4px 16px; vertical-align: top; width: 100%; background-color: #e61d35; border-radius: 8px;">
+                                      <h3 class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; width: 85%;"><span class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; font-size: 24px; font-weight: 700; color: #fafafa; padding-right: 16px;">save</span> $00.00</h3>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding-top: 8px; vertical-align: top; width: 100%;">
+                                      <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                              </td>
+                            </tr>
 
                           </td>
                         </tr>
@@ -1106,9 +1215,9 @@
                             <td width="280" valign="top" style="padding: 0;"
                       <![endif]-->
 
-                      <table class="column column-one-half" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin: 0;" role="presentation">
+                      <table class="column column-one-half" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
                         <tr>
-                          <td class="padding" style="padding: 24px 0 0;">
+                          <td class="padding" style="padding: 0;">
 
                             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                               <tr>
@@ -1117,21 +1226,33 @@
                                 </td>
                               </tr>
                             </table>
-                            
-                            <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
-                              <tr>
-                                <td class="flyerProduct" style="text-align: left; padding: 0 24px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important; padding-bottom: 8px;">Product Name</h3>
-                                  <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="flyerProductPrice" style="text-align: left; padding: 4px 16px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
-                                </td>
-                              </tr>
-                            </table>
+
+                            <tr>
+                              <td style="padding: 0 24px 0 16px;">
+
+                                <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                    <td class="flyerProduct" style="text-align: left; padding: 0 0 8px 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
+                                      <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important;">Product</h3>
+                                      <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding: 8px 16px 4px 16px; vertical-align: top; width: 100%; background-color: #e61d35; border-radius: 8px;">
+                                      <h3 class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; width: 85%;"><span class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; font-size: 24px; font-weight: 700; color: #fafafa; padding-right: 16px;">save</span> $00.00</h3>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding-top: 8px; vertical-align: top; width: 100%;">
+                                      <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                              </td>
+                            </tr>
 
                           </td>
                         </tr>
@@ -1141,31 +1262,44 @@
                       </td><td width="280" valign="top" style="padding: 0;">
                       <![endif]-->
 
-                      <table class="column column-one-half" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin: 0;" role="presentation">
+                      <table class="column column-one-half" width="100%" align="'center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0; margin-bottom: 0;" role="presentation">
                         <tr>
-                          <td class="padding" style="padding: 24px 0 0;">
+                          <td class="padding" style="padding: 0;">
+
                             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
                               <tr>
                                 <td style="text-align: center; padding: 0; font-size: 0;">
-                                  <img src="img/image-placeholder_no-bkgd_560x300.png" alt="Product alt text" style="margin-bottom: 16px; width: 100%; max-width: 300px;" title="Product Title text" width="280">
+                                  <img src="img/image-placeholder_no-bkgd_560x300.png" alt="Product alt text" style="margin-bottom: 16px; width: 100%; max-width: 600px;" title="Product Title text" width="280">
                                 </td>
                               </tr>
                             </table>
 
-                            <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
-                              <tr>
-                                <td class="flyerProduct" style="text-align: left; padding: 0 24px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important; padding-bottom: 8px;">Product Name Bottom</h3>
-                                  <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="flyerProductPrice" style="text-align: left; padding: 4px 16px 0 24px; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
-                                  <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
-                                  <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 500; color: #005cab; margin: 0; line-height: 26px;"><span class="productSave" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; color: #2d2d2d; margin: 0; padding-right: 16px;">save</span> $00.00</h3>
-                                </td>
-                              </tr>
-                            </table>
+                            <tr>
+                              <td style="padding: 0 24px 0 16px;">
+
+                                <table class="column" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;" role="presentation">
+                                  <tr>
+                                    <td class="flyerProduct" style="text-align: left; padding: 0 0 8px 0; vertical-align: top; font-family: Helvetica, Arial, sans-serif; width: 100%;">
+                                      <h3 class="productHead" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; line-height: 26px; margin: 0 !important;">Product</h3>
+                                      <p class="productDescription" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; padding: 0; margin: 0;">Description, size</p>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding: 8px 16px 4px 16px; vertical-align: top; width: 100%; background-color: #e61d35; border-radius: 8px;">
+                                      <h3 class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; color: #fafafa; line-height: 1; width: 85%;"><span class="productSave-sm" style="font-family: Helvetica, Arial, sans-serif; letter-spacing: 0.8px; text-transform: uppercase; font-size: 24px; font-weight: 700; color: #fafafa; padding-right: 16px;">save</span> $00.00</h3>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td class="flyerProductPrice" style="font-family: Helvetica, Arial, sans-serif; text-align: left; padding-top: 8px; vertical-align: top; width: 100%;">
+                                      <h2 class="productPrice" style="font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; color: #005cab;">$00.00</h2>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                              </td>
+                            </tr>
 
                           </td>
                         </tr>
